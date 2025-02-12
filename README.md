@@ -7,21 +7,6 @@
   />
 </a>
 
-<a href="https://www.typescriptlang.org/">
-  <img
-    src="https://avatars.githubusercontent.com/u/189666396?s=150&u=9d55b1eb4ce258974ead76bf07ccf49ef0eb0ea7&v=4"
-    title="@typescript-package"
-    style="float:left; margin-right: 10px;"
-  />
-</a>
-<a href="https://www.typescriptlang.org/">
-  <img
-    src="https://avatars.githubusercontent.com/u/189591238?s=148&v=4"
-    title="@testing-package"
-    style="border: 1px solid #e1e1e1; border-radius: 12px"
-  />
-</a>
-
 ## typedly/array
 
 <!-- npm badge -->
@@ -321,6 +306,18 @@ How do I know when to release 1.0.0?
 ## License
 
 MIT © typedly ([license][typedly-license])
+
+## Projects
+
+- **[@typedly/callback](https://github.com/typedly/callback)**: A **TypeScript** type definitions package for asynchronous and synchronous callback functions of various types.
+- **[@typedly/character](https://github.com/typedly/character)**: A **TypeScript** type definitions package for various character types.
+- **[@typedly/context](https://github.com/typedly/context)**: A **TypeScript** type definitions package for context data structures.
+- **[@typedly/descriptor](https://github.com/typedly/descriptor)**: A **TypeScript** type definitions package for property descriptor.
+- **[@typedly/digit](https://github.com/typedly/digit)**: A **TypeScript** type definitions package for digit types.
+- **[@typedly/letter](https://github.com/typedly/letter)**: A **TypeScript** type definitions package for handling letter types.
+- **[@typedly/payload](https://github.com/typedly/payload)**: A **TypeScript** type definitions package for payload data structures.
+- **[@typedly/regexp](https://github.com/typedly/regexp)**: A **TypeScript** type definitions package for `RegExp`.
+- **[@typedly/symbol](https://github.com/typedly/symbol)**: A **TypeScript** type definitions package for various symbols.
 
 <!-- This package: typedly  -->
   <!-- GitHub: badges -->
