@@ -1,8 +1,24 @@
 
-<a href="https://www.typescriptlang.org/">
+<a href="https://github.com/typescript-package">
   <img
     src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
     title="@typedly/array"
+    style="float:left; margin-right: 10px;"
+  />
+</a>
+
+<a href="https://www.typescriptlang.org/">
+  <img
+    src="https://avatars.githubusercontent.com/u/189666396?s=150&u=9d55b1eb4ce258974ead76bf07ccf49ef0eb0ea7&v=4"
+    title="@typescript-package"
+    style="float:left; margin-right: 10px;"
+  />
+</a>
+<a href="https://www.typescriptlang.org/">
+  <img
+    src="https://avatars.githubusercontent.com/u/189591238?s=148&v=4"
+    title="@testing-package"
+    style="border: 1px solid #e1e1e1; border-radius: 12px"
   />
 </a>
 
