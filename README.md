@@ -13,7 +13,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-A **TypeScript** type definitions package to handle `array`.
+A **TypeScript** type definitions package to handle array-related operations.
 
 ## Table of contents
 
