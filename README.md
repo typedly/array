@@ -43,10 +43,6 @@ A **TypeScript** type definitions package to handle array-related operations.
 
 ## Installation
 
-### 2. Install the package
-
-Now, install the package:
-
 ```bash
 npm install @typedly/array --save-peer
 ```
