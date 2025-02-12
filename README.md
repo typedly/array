@@ -307,7 +307,7 @@ How do I know when to release 1.0.0?
 
 MIT © typedly ([license][typedly-license])
 
-## Projects
+## Packages
 
 - **[@typedly/callback](https://github.com/typedly/callback)**: A **TypeScript** type definitions package for asynchronous and synchronous callback functions of various types.
 - **[@typedly/character](https://github.com/typedly/character)**: A **TypeScript** type definitions package for various character types.
