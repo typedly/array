@@ -2,10 +2,10 @@
 /**
  * @description Inserts the `Element` type to the generic type variable `Array` at index of `Index` type.
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @template {number} Index 
- * @template {any[]} [Result=[]] 
+ * @template {any[]} [Accumulator=[]] 
  * @example
  * import { Insert } from '@typedly/array';
  * 
@@ -22,7 +22,7 @@
  * const example3: Example3 = ['X'];
  */
 export type Insert<
-  Array extends any[], 
+  Array extends readonly any[], 
   Element, 
   Index extends number, 
   Accumulator extends any[] = []

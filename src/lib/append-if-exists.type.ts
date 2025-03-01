@@ -1,7 +1,7 @@
 /**
  * @description Appends the `Element` type to the generic type variable `Array` if `Element` is already exists in the array.
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @example
  * import { AppendIfExists } from '@typedly/array';
@@ -18,7 +18,7 @@
  * type Example3 = AppendIfExists<["a", "b", "c"], "b">;  // ["a", "b", "c", "b"]
  * const example3: Example3 = ["a", "b", "c", "b"];
  */
-export type AppendIfExists<Array extends any[], Element> = 
+export type AppendIfExists<Array extends readonly any[], Element> = 
   Element extends Array[number] 
     ? [...Array, Element] 
     : Array;

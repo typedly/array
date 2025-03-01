@@ -1,7 +1,7 @@
 /**
  * @description Appends the 
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @template {number} Count 
  * @template {any[]} [Accumulator=[]] 
@@ -21,7 +21,7 @@
  * const example3: Example3 = [false, true, true, true, true, true, true];
  */
 export type AppendDuplicates<
-  Array extends any[], 
+  Array extends readonly any[], 
   Element, 
   Count extends number, 
   Accumulator extends any[] = []

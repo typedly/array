@@ -1,7 +1,7 @@
 /**
  * @description Removes the `Element` type from generic type variable `Array`.
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @example
  * import { Remove } from '@typedly/array';
@@ -16,7 +16,7 @@
  * const example3: Example3 = ['b'];
  * const example4: Example4 = [];
  */
-export type Remove<Array extends any[], Element> = 
+export type Remove<Array extends readonly any[], Element> = 
   Array extends [infer First, ...infer Rest]
     ? First extends Element
       ? Remove<Rest, Element>
