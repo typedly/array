@@ -1,7 +1,7 @@
 /**
  * @description Checks whether the generic type variable `Array` contains the `Element` type.
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @example
  * import { Includes } from '@typedly/array';
@@ -12,5 +12,11 @@
  * const example1: Example1 = true;
  * const example2: Example2 = false;
  */
-export type Includes<Array extends any[], Element> = 
-  Element extends Array[number] ? true : false;
+export type Includes<Array extends readonly any[], Element> =
+  Array extends [infer First, ...infer Rest]
+    ?  First extends Element
+      ? true
+      : Element extends First
+        ? true
+        : Includes<Rest, Element>
+    : false;
