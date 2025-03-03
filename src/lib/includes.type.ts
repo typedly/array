@@ -12,6 +12,7 @@
  * const example1: Example1 = true;
  * const example2: Example2 = false;
  */
+
 export type Includes<Array extends readonly any[], Element> =
   Array extends [infer First, ...infer Rest]
     ?  First extends Element

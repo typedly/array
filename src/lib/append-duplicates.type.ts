@@ -1,5 +1,5 @@
 /**
- * @description Appends the 
+ * @description Appends the element to the end of an array.
  * @export
  * @template {readonly any[]} Array 
  * @template Element 

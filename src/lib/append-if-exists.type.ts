@@ -1,5 +1,5 @@
 /**
- * @description Appends the `Element` type to the generic type variable `Array` if `Element` is already exists in the array.
+ * @description Appends the `Element` type to the generic type variable `Array` if `Element` already exists in the array.
  * @export
  * @template {readonly any[]} Array 
  * @template Element 

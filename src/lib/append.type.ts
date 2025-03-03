@@ -18,5 +18,4 @@
  * const example5: Example4 = [1, 2, 2];
  * const example6: Example5 = [1, 2, 3, 'a'];
  */
-
 export type Append<Array extends readonly any[], Element> = [...Array, Element];
