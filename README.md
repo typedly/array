@@ -321,6 +321,7 @@ MIT © typedly ([license][typedly-license])
 
 - **[@typedly/callback](https://github.com/typedly/callback)**: A **TypeScript** type definitions package for asynchronous and synchronous callback functions of various types.
 - **[@typedly/character](https://github.com/typedly/character)**: A **TypeScript** type definitions package for various character types.
+- **[@typedly/check](https://github.com/typedly/check)**: A **lightweight TypeScript** type definitions library for type comparison.
 - **[@typedly/context](https://github.com/typedly/context)**: A **TypeScript** type definitions package for context data structures.
 - **[@typedly/descriptor](https://github.com/typedly/descriptor)**: A **TypeScript** type definitions package for property descriptor.
 - **[@typedly/digit](https://github.com/typedly/digit)**: A **TypeScript** type definitions package for digit types.
