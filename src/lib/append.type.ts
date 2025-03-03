@@ -1,7 +1,7 @@
 /**
  * @description Appends the `Element` type to the end of generic type variable `Array`.
  * @export
- * @template {Type[]} [Array=[]] 
+ * @template {readonly any[]} Array 
  * @template Element 
  * @example
  * import { Append } from '@typedly/array';
@@ -18,4 +18,4 @@
  * const example5: Example4 = [1, 2, 2];
  * const example6: Example5 = [1, 2, 3, 'a'];
  */
-export type Append<Array extends any[], Element> = [...Array, Element];
+export type Append<Array extends readonly any[], Element> = [...Array, Element];

@@ -1,7 +1,7 @@
 /**
  * @description Reverses the generic type variable `Array`.
  * @export
- * @template {any[]} Array 
+ * @template {readonly any[]} Array 
  * @example
  * import { Reverse } from '@typedly/array';
  * 
@@ -12,7 +12,7 @@
  * const example2: Example2 = ['a', 'b', 'c'];
  * 
  */
-export type Reverse<Array extends any[]> = 
+export type Reverse<Array extends readonly any[]> = 
   Array extends [infer First, ...infer Rest] 
     ? [...Reverse<Rest>, First] 
     : [];

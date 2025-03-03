@@ -1,7 +1,7 @@
+export type { Append } from './append.type';
 export type { AppendDuplicates } from './append-duplicates.type';
 export type { AppendIfExists } from './append-if-exists.type';
 export type { AppendUnique } from './append-unique.type';
-export type { Append } from './append.type';
 export type { Fill } from './fill.type';
 export type { First } from './first.type';
 export type { Includes } from './includes.type';
@@ -11,5 +11,4 @@ export type { Length } from './length.type';
 export type { Prepend } from './prepend.type';
 export type { Remove } from './remove.type';
 export type { Reverse } from './reverse.type';
-// export type { Slice } from './slice.type';
 export type { Unique } from './unique.type';

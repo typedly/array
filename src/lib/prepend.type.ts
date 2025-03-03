@@ -1,7 +1,7 @@
 /**
  * @description Appends the `Element` type to the beginning generic type variable `Array`.
  * @export
- * @template {any[]} [Array=[]] 
+ * @template {readonly any[]} [Array=[]] 
  * @template Element 
  * @example
  * import { Prepend } from '@typedly/array';
@@ -18,4 +18,4 @@
  * const example5: Example4 = [2, 1, 2];
  * const example6: Example5 = ['a', 1, 2, 3];
  */
-export type Prepend<Array extends any[], Element> = [Element, ...Array];
+export type Prepend<Array extends readonly any[], Element> = [Element, ...Array];

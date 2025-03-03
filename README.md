@@ -1,8 +1,7 @@
-
-<a href="https://www.typescriptlang.org/">
+<a href="https://github.com/typescript-package">
   <img
     src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
-    title="@typedly/array"
+    title="A collection of TypeScript packages for precise, type-safe development."
   />
 </a>
 
@@ -19,20 +18,21 @@ A **TypeScript** type definitions package to handle array-related operations.
 
 - [Installation](#installation)
 - [Api](#api)
-  - `AppendDuplicates`
-  - `AppendIfExists`
-  - `AppendUnique`
-  - `Append`
-  - `Fill`
-  - `First`
-  - `Includes`
-  - `Last`
-  - `Length`
-  - `Prepend`
-  - `Remove`
-  - `Reverse`
+  - [`AppendDuplicates`](#appendduplicates)
+  - [`AppendIfExists`](#appendifexists)
+  - [`AppendUnique`](#appendunique)
+  - [`Append`](#append)
+  - [`Fill`](#fill)
+  - [`First`](#first)
+  - [`Includes`](#includes)
+  - [`Insert`](#insert)
+  - [`Last`](#last)
+  - [`Length`](#length)
+  - [`Prepend`](#prepend)
+  - [`Remove`](#remove)
+  - [`Reverse`](#reverse)
   - Slice
-  - `Unique`
+  - [`Unique`](#unique)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -40,6 +40,8 @@ A **TypeScript** type definitions package to handle array-related operations.
   - [Commit](#commit)
   - [Versioning](#versioning)
 - [License](#license)
+
+---
 
 ## Installation
 
@@ -63,7 +65,6 @@ import {
   Prepend,
   Remove,
   Reverse,
-  // Slice,
   Unique
 } from '@typedly/array';
 ```
@@ -167,6 +168,24 @@ const example1: Example1 = true;
 const example2: Example2 = false;
 ```
 
+### `Insert`
+
+```typescript
+import { Insert } from '@typedly/array';
+
+// Insert 99 at index 2 in the array [1, 2, 3, 4]
+type Example1 = Insert<[1, 2, 3, 4], 99, 2>;  // [1, 2, 99, 3, 4]
+const example1: Example1 = [1, 2, 99, 3, 4];
+
+// Insert 'a' at index 1 in the array ['b', 'c']
+type Example2 = Insert<['b', 'c'], 'a', 1>;  // ['b', 'a', 'c']
+const example2: Example2 = ['b', 'a', 'c']; 
+
+// Insert 'X' at index 0 in an empty array
+type Example3 = Insert<[], 'X', 0>;  // ['X']
+const example3: Example3 = ['X'];
+```
+
 ### `Last`
 
 ```typescript
@@ -237,14 +256,6 @@ const example1: Example1 = [3, 2, 1];
 const example2: Example2 = ['a', 'b', 'c'];
 ```
 
-### `Slice`
-
-```typescript
-import { Slice } from '@typedly/array';
-
-// 
-```
-
 ### `Unique`
 
 ```typescript
@@ -305,6 +316,21 @@ How do I know when to release 1.0.0?
 ## License
 
 MIT © typedly ([license][typedly-license])
+
+## Packages
+
+- **[@typedly/callback](https://github.com/typedly/callback)**: A **TypeScript** type definitions package for asynchronous and synchronous callback functions of various types.
+- **[@typedly/character](https://github.com/typedly/character)**: A **TypeScript** type definitions package for various character types.
+- **[@typedly/check](https://github.com/typedly/check)**: A **lightweight TypeScript** type definitions library for type comparison.
+- **[@typedly/context](https://github.com/typedly/context)**: A **TypeScript** type definitions package for context data structures.
+- **[@typedly/descriptor](https://github.com/typedly/descriptor)**: A **TypeScript** type definitions package for property descriptor.
+- **[@typedly/digit](https://github.com/typedly/digit)**: A **TypeScript** type definitions package for digit types.
+- **[@typedly/letter](https://github.com/typedly/letter)**: A **TypeScript** type definitions package for handling letter types.
+- **[@typedly/object](https://github.com/typedly/object)**: A **TypeScript** type definitions package to handle object-related operations.
+- **[@typedly/payload](https://github.com/typedly/payload)**: A **TypeScript** type definitions package for payload data structures.
+- **[@typedly/property](https://github.com/typedly/property)**: A **TypeScript** type definitions package to handle object property-related operations.
+- **[@typedly/regexp](https://github.com/typedly/regexp)**: A **TypeScript** type definitions package for `RegExp`.
+- **[@typedly/symbol](https://github.com/typedly/symbol)**: A **TypeScript** type definitions package for various symbols.
 
 <!-- This package: typedly  -->
   <!-- GitHub: badges -->
