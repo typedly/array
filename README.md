@@ -1,8 +1,7 @@
 <a href="https://github.com/typescript-package">
   <img
     src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
-    title="@typedly/array"
-    style="float:left; margin-right: 10px;"
+    title="A collection of TypeScript packages for precise, type-safe development."
   />
 </a>
 
@@ -19,20 +18,21 @@ A **TypeScript** type definitions package to handle array-related operations.
 
 - [Installation](#installation)
 - [Api](#api)
-  - `AppendDuplicates`
-  - `AppendIfExists`
-  - `AppendUnique`
-  - `Append`
-  - `Fill`
-  - `First`
-  - `Includes`
-  - `Last`
-  - `Length`
-  - `Prepend`
-  - `Remove`
-  - `Reverse`
+  - [`AppendDuplicates`](#appendduplicates)
+  - [`AppendIfExists`](#appendifexists)
+  - [`AppendUnique`](#appendunique)
+  - [`Append`](#append)
+  - [`Fill`](#fill)
+  - [`First`](#first)
+  - [`Includes`](#includes)
+  - [`Insert`](#insert)
+  - [`Last`](#last)
+  - [`Length`](#length)
+  - [`Prepend`](#prepend)
+  - [`Remove`](#remove)
+  - [`Reverse`](#reverse)
   - Slice
-  - `Unique`
+  - [`Unique`](#unique)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -40,6 +40,8 @@ A **TypeScript** type definitions package to handle array-related operations.
   - [Commit](#commit)
   - [Versioning](#versioning)
 - [License](#license)
+
+---
 
 ## Installation
 
@@ -63,7 +65,6 @@ import {
   Prepend,
   Remove,
   Reverse,
-  // Slice,
   Unique
 } from '@typedly/array';
 ```
@@ -167,6 +168,24 @@ const example1: Example1 = true;
 const example2: Example2 = false;
 ```
 
+### `Insert`
+
+```typescript
+import { Insert } from '@typedly/array';
+
+// Insert 99 at index 2 in the array [1, 2, 3, 4]
+type Example1 = Insert<[1, 2, 3, 4], 99, 2>;  // [1, 2, 99, 3, 4]
+const example1: Example1 = [1, 2, 99, 3, 4];
+
+// Insert 'a' at index 1 in the array ['b', 'c']
+type Example2 = Insert<['b', 'c'], 'a', 1>;  // ['b', 'a', 'c']
+const example2: Example2 = ['b', 'a', 'c']; 
+
+// Insert 'X' at index 0 in an empty array
+type Example3 = Insert<[], 'X', 0>;  // ['X']
+const example3: Example3 = ['X'];
+```
+
 ### `Last`
 
 ```typescript
@@ -235,14 +254,6 @@ type Example2 = Reverse<['c', 'b', 'a']>;  // ['a', 'b', 'c']
 
 const example1: Example1 = [3, 2, 1];
 const example2: Example2 = ['a', 'b', 'c'];
-```
-
-### `Slice`
-
-```typescript
-import { Slice } from '@typedly/array';
-
-// 
 ```
 
 ### `Unique`
