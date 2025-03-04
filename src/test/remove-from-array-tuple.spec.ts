@@ -1,4 +1,4 @@
-import { RemoveFromArrayTuple } from "../lib";
+import {  Remove } from "../lib";
 
 export type TestCharacter = 'a' | 'b' | 'c' | 'd';
 
@@ -19,10 +19,10 @@ export class Test<Character extends [TestCharacter, ...TestCharacter[]] | []> {
   // Modify remove method to handle empty array case
   public remove<RemovedCharacters extends Character[number]>(
     ...characters: RemovedCharacters[]
-  ): Test<RemoveFromArrayTuple<TestCharacter, Character, RemovedCharacters>> {
+  ): Test<Remove<Character, RemovedCharacters, TestCharacter>> {
     const filteredChars = this._characters.filter(
       char => !characters.includes(char as RemovedCharacters)
-    ) as RemoveFromArrayTuple<TestCharacter, Character, RemovedCharacters>;
+    ) as Remove<Character, RemovedCharacters, TestCharacter>;
 
     return new Test(filteredChars);
   }

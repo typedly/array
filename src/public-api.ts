@@ -1,8 +1,8 @@
 /*
  * Public API Surface of array
  */
-
 export type {
+  // Type.
   AppendDuplicates,
   AppendIfExists,
   AppendUnique,
@@ -15,6 +15,10 @@ export type {
   Prepend,
   Remove,
   Reverse,
+  ToUnion,
   // Slice,
-  Unique
+  Unique,
+
+  // Namespace
+  Typedly,
 } from './lib';

@@ -21,10 +21,11 @@
  * const example3: Example3 = [false, true, true, true, true, true, true];
  */
 export type AppendDuplicates<
-  Array extends readonly any[], 
-  Element, 
+  Array extends readonly Type[], 
+  Element extends Type, 
   Count extends number, 
-  Accumulator extends any[] = []
+  Type = any,
+  Accumulator extends readonly Type[] = []
 > = Accumulator['length'] extends Count 
   ? [...Array, ...Accumulator] 
-  : AppendDuplicates<Array, Element, Count, [...Accumulator, Element]>;
+  : AppendDuplicates<Array, Element, Count, Type, [...Accumulator, Element]>;

@@ -18,21 +18,26 @@ A **TypeScript** type definitions package to handle array-related operations.
 
 - [Installation](#installation)
 - [Api](#api)
-  - [`AppendDuplicates`](#appendduplicates)
-  - [`AppendIfExists`](#appendifexists)
-  - [`AppendUnique`](#appendunique)
-  - [`Append`](#append)
-  - [`Fill`](#fill)
-  - [`First`](#first)
-  - [`Includes`](#includes)
-  - [`Insert`](#insert)
-  - [`Last`](#last)
-  - [`Length`](#length)
-  - [`Prepend`](#prepend)
-  - [`Remove`](#remove)
-  - [`Reverse`](#reverse)
-  - Slice
-  - [`Unique`](#unique)
+  - **Namespace**
+    - [`Typedly`](#typedly)
+  - **Type**
+    - [`AppendDuplicates`](#appendduplicates)
+    - [`AppendIfExists`](#appendifexists)
+    - [`AppendUnique`](#appendunique)
+    - [`Append`](#append)
+    - [`Fill`](#fill)
+    - [`First`](#first)
+    - [`Includes`](#includes)
+    - [`Insert`](#insert)
+    - [`Last`](#last)
+    - [`Length`](#length)
+    - [`Prepend`](#prepend)
+    - [`Remove`](#remove)
+    - [`Remove`](#remove)
+    - [`Reverse`](#reverse)
+    - Slice
+    - [`ToUnion`](#tounion)
+    - [`Unique`](#unique)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -67,6 +72,15 @@ import {
   Reverse,
   Unique
 } from '@typedly/array';
+```
+
+### `Typedly`
+
+```typescript
+import { Typedly } from '@typedly/array';
+
+type Example1 = Typedly.Array.Append.Unique<[1, 2], 3>;
+const example1: Example1 = [1, 2, 3];
 ```
 
 ### `AppendDuplicates`
@@ -254,6 +268,18 @@ type Example2 = Reverse<['c', 'b', 'a']>;  // ['a', 'b', 'c']
 
 const example1: Example1 = [3, 2, 1];
 const example2: Example2 = ['a', 'b', 'c'];
+```
+
+### `ToUnion`
+
+```typescript
+import { ToUnion } from '@typedly/array';
+
+type UnionFromArray1 = ToUnion<[1, 2, 3]>; // type UnionFromArray = 3 | 1 | 2
+type UnionFromArray2 = ToUnion<["a", "b", "c"]>; // type UnionFromArray2 = "a" | "b" | "c"
+
+const example1: UnionFromArray1 = 1;
+const example2: UnionFromArray2 = "b";
 ```
 
 ### `Unique`
