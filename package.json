@@ -30,13 +30,15 @@
     "Fill",
     "First",
     "Includes",
+    "Insert",
     "Last",
     "Length",
     "Prepend",
     "Remove",
     "Reverse",
     "Slice",
-    "Unique"
+    "Unique",
+    "ToUnion"
   ],
   "funding": [
     {
