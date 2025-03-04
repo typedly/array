@@ -15,6 +15,7 @@ export type {
   Prepend,
   Remove,
   Reverse,
+  ToUnion,
   // Slice,
   Unique
 } from './lib';

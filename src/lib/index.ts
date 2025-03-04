@@ -11,4 +11,5 @@ export type { Length } from './length.type';
 export type { Prepend } from './prepend.type';
 export type { Remove } from './remove.type';
 export type { Reverse } from './reverse.type';
+export type { ToUnion } from './to-union.type';
 export type { Unique } from './unique.type';
