@@ -30,8 +30,10 @@ A **TypeScript** type definitions package to handle array-related operations.
   - [`Length`](#length)
   - [`Prepend`](#prepend)
   - [`Remove`](#remove)
+  - [`Remove`](#remove)
   - [`Reverse`](#reverse)
   - Slice
+  - [`ToUnion`](#tounion)
   - [`Unique`](#unique)
 - [Contributing](#contributing)
 - [Support](#support)
@@ -254,6 +256,18 @@ type Example2 = Reverse<['c', 'b', 'a']>;  // ['a', 'b', 'c']
 
 const example1: Example1 = [3, 2, 1];
 const example2: Example2 = ['a', 'b', 'c'];
+```
+
+### `ToUnion`
+
+```typescript
+import { ToUnion } from '@typedly/array';
+
+type UnionFromArray1 = ToUnion<[1, 2, 3]>; // type UnionFromArray = 3 | 1 | 2
+type UnionFromArray2 = ToUnion<["a", "b", "c"]>; // type UnionFromArray2 = "a" | "b" | "c"
+
+const example1: UnionFromArray1 = 1;
+const example2: UnionFromArray2 = "b";
 ```
 
 ### `Unique`
