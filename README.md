@@ -18,23 +18,26 @@ A **TypeScript** type definitions package to handle array-related operations.
 
 - [Installation](#installation)
 - [Api](#api)
-  - [`AppendDuplicates`](#appendduplicates)
-  - [`AppendIfExists`](#appendifexists)
-  - [`AppendUnique`](#appendunique)
-  - [`Append`](#append)
-  - [`Fill`](#fill)
-  - [`First`](#first)
-  - [`Includes`](#includes)
-  - [`Insert`](#insert)
-  - [`Last`](#last)
-  - [`Length`](#length)
-  - [`Prepend`](#prepend)
-  - [`Remove`](#remove)
-  - [`Remove`](#remove)
-  - [`Reverse`](#reverse)
-  - Slice
-  - [`ToUnion`](#tounion)
-  - [`Unique`](#unique)
+  - **Namespace**
+    - [`Typedly`](#typedly)
+  - **Type**
+    - [`AppendDuplicates`](#appendduplicates)
+    - [`AppendIfExists`](#appendifexists)
+    - [`AppendUnique`](#appendunique)
+    - [`Append`](#append)
+    - [`Fill`](#fill)
+    - [`First`](#first)
+    - [`Includes`](#includes)
+    - [`Insert`](#insert)
+    - [`Last`](#last)
+    - [`Length`](#length)
+    - [`Prepend`](#prepend)
+    - [`Remove`](#remove)
+    - [`Remove`](#remove)
+    - [`Reverse`](#reverse)
+    - Slice
+    - [`ToUnion`](#tounion)
+    - [`Unique`](#unique)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -69,6 +72,15 @@ import {
   Reverse,
   Unique
 } from '@typedly/array';
+```
+
+### `Typedly`
+
+```typescript
+import { Typedly } from '@typedly/array';
+
+type Example1 = Typedly.Array.Append.Unique<[1, 2], 3>;
+const example1: Example1 = [1, 2, 3];
 ```
 
 ### `AppendDuplicates`

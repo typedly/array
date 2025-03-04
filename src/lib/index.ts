@@ -1,3 +1,4 @@
+// Type.
 export type { Append } from './append.type';
 export type { AppendDuplicates } from './append-duplicates.type';
 export type { AppendIfExists } from './append-if-exists.type';
@@ -13,3 +14,6 @@ export type { Remove } from './remove.type';
 export type { Reverse } from './reverse.type';
 export type { ToUnion } from './to-union.type';
 export type { Unique } from './unique.type';
+
+// Namespace.
+export type { Typedly } from './typedly.namespace';
